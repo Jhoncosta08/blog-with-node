@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const connection = require('./database/database');
+const categories_controller = require('./categories/categories.controller');
+const articles_controller = require('./articles/articles.controller');
 
 
 //view engine - ejs
@@ -24,6 +26,11 @@ connection.authenticate().then(() => {
 }).catch((error) => {
    console.log('database connection error: ', error);
 });
+
+
+//config to use routers controllers
+app.use('/', categories_controller);
+app.use('/', articles_controller);
 
 
 //main route
