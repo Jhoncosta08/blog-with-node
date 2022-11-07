@@ -10,7 +10,7 @@ const categories_model = connection.define('categories', {
 });
 
 
-//sync database
+//sync database, force: false serve to create table if not exist
 categories_model.sync({ force: false });
 
 

@@ -17,7 +17,7 @@ category_model.hasMany(articles_model); // one category has many articles - rela
 articles_model.belongsTo(category_model); // one article has one category - relation of 1-1
 
 
-//sync database
+//sync database, force: false serve to create table if not exist
 articles_model.sync({ force: false });
 
 //exports
