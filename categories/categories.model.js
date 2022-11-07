@@ -10,5 +10,9 @@ const categories_model = connection.define('categories', {
 });
 
 
+//sync database
+categories_model.sync({ force: false });
+
+
 //exports
 module.exports = categories_model;
