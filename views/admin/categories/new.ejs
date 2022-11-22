@@ -1,0 +1,30 @@
+<%- include('../../partials/header.ejs') %>
+
+<body>
+    <%- include('../../partials/navbar.ejs') %>
+    <div class="container-fluid" style="padding: 20px">
+        <div class="row" style="margin-bottom: 20px">
+            <div class="col-sm">
+                <h2>Category</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm" style="max-width: 400px">
+                <form class="card" style="padding: 20px">
+                    <div class="mb-3">
+                        <label for="category-input" class="form-label">Category name</label>
+                        <input type="text" class="form-control" id="category-input" aria-describedby="category-input">
+                    </div>
+
+                    <div class="mb-3">
+                        <button class="btn btn-primary">Add category</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<%- include('../../partials/footer.ejs') %>
