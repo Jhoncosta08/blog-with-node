@@ -11,14 +11,14 @@
 
         <div class="row">
             <div class="col-sm" style="max-width: 400px">
-                <form class="card" style="padding: 20px">
+                <form class="card" method="POST" action="/categories/save" style="padding: 20px">
                     <div class="mb-3">
                         <label for="category-input" class="form-label">Category name</label>
-                        <input type="text" class="form-control" id="category-input" aria-describedby="category-input">
+                        <input type="text" name="title" class="form-control" id="category-input" aria-describedby="category-input">
                     </div>
 
                     <div class="mb-3">
-                        <button class="btn btn-primary">Add category</button>
+                        <button type="submit" class="btn btn-primary">Add category</button>
                     </div>
                 </form>
             </div>
